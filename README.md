@@ -12,6 +12,8 @@ See [this tutorial on WP-AppKit website](https://uncategorized-creations.com/490
 
 ## Setup
 
+- Download or clone the content of this repository to a "onesignal-push-to-wp-users" folder that you create in your _wp-content/plugins directory_
 - Set your OneSignal **App ID** and **Auth key** in _onesignal-push-to-wp-users.php_ (constants ONESIGNAL_APP_ID and ONESIGNAL_AUTH_KEY). You can get those from _OneSignal > Settings > Keys & Ids_
 - You can also set your own notification message in the "send_notification()" function
+- Activate the plugin _"OneSignal Push To WordPress Users"_ in WordPress
 - Then go to the "OneSignal push to WP Users" admin page under the "Tools" menu, select the WordPress users you want to send notifications to and finally send push notifications that only the selected WordPress users will receive in their app!
