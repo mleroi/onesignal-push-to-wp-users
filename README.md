@@ -1,7 +1,7 @@
 # onesignal-push-to-wp-users
 
 WordPress micro plugin that implements an example of how to send OneSignal push notifications to chosen WordPress users only.
-To be used with WP-AppKit mobile apps and PWAs.
+To be used with [WP-AppKit](https://uncategorized-creations.com/) mobile apps and PWAs.
 
 This plugin should be seen more as a very basic demo from which you can extract ideas to implement your own features.
 
