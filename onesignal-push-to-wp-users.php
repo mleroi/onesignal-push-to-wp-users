@@ -101,7 +101,7 @@ function send_notification( $user_ids ) {
 	$onesignal_post_url = 'https://onesignal.com/api/v1/notifications';
 
 	$notification_title = "Hey from WordPress!";
-	$notification_content = "It is ". date('H:i:s') .": a good time to enjoy your WP-AppKit app :)";
+	$notification_content = "It's ". date('g:iA') ."! A good time to enjoy your WP-AppKit app :)";
 
 	//See https://documentation.onesignal.com/reference#create-notification for available notification fields and config.
 	//We use include_external_user_ids to send WP user ids:
