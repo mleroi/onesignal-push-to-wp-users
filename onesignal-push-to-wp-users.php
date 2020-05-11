@@ -23,14 +23,14 @@ define('ONESIGNAL_AUTH_KEY', "NDcxNjZlMDYtOTYyMi00Y2I5LWI4YmUtZTU3YjE5OTZlZGJm")
 /**
  * Add the Back Office panel where the users will be selected and the notifications sent:
  */
-add_action( 'admin_menu', __NAMESPACE__ ."\add_option_page" );
-function add_option_page() {
-	add_options_page(
-	        'OneSignal > WP Users',
-	        'OneSignal > WP Users',
+add_action( 'admin_menu', __NAMESPACE__ ."\add_admin_page" );
+function add_admin_page() {
+	add_management_page(
+	        'OneSignal push to WP Users',
+	        'OneSignal push to WP Users',
 	        'manage_options',
 	        'onesignal-push-to-wp-users-plugin',
-	        __NAMESPACE__ ."\option_page_content"
+	        __NAMESPACE__ ."\admin_page_content"
 	);
 }
 
@@ -38,7 +38,7 @@ function add_option_page() {
  * Render the Back Office panel: display a form where we can choose the WordPress users to
  * send notifications to, and handle notification sending on form submission.
  */
-function option_page_content() {
+function admin_page_content() {
 
 	$notification_result = [
 		'sent' => false,
